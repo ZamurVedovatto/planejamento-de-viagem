@@ -9,8 +9,9 @@
   - using libraries and styles
   - re-organizing the layout
 - refactor code
-
+- publish
+- share with marcela and gober
 
 ## docs
-- styled-components
-  - https://styled-components.com/docs/basics
+https://styled-components.com/docs/basics
+https://v5.reactrouter.com/web/api/Link
