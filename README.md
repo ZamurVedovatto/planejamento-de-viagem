@@ -13,5 +13,5 @@
 - share with marcela and gober
 
 ## docs
-https://styled-components.com/docs/basics
-https://v5.reactrouter.com/web/api/Link
+- https://styled-components.com/docs/basics
+- https://v5.reactrouter.com/web/api/Link

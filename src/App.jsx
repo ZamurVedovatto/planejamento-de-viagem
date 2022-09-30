@@ -33,7 +33,7 @@ function App() {
 
           <NavLink url={"/passagens"} title={"Passagens"} />
           <NavLink url={"/hospedagens"} title={"Hospedagens"} />
-          <NavLink url={"/custos-gerai"} title={"Custos Gerais"} />
+          <NavLink url={"/custos-gerais"} title={"Custos Gerais"} />
           <NavLink url={"/alimentacao"} title={"Alimentação"} />
           <NavLink url={"/seguros"} title={"Seguros"} />
           <NavLink url={"/orcamento"} title={"Orçamento"} />
