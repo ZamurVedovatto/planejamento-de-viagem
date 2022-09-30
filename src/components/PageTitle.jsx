@@ -1,5 +1,5 @@
 import React from 'react'
-import {PageTitleStyles} from './ComponentStyles'
+import {PageTitleStyles} from './../styles/ComponentStyles'
 
 export const PageTitle = () => {
   return (

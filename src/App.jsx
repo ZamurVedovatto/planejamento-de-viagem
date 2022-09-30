@@ -5,17 +5,16 @@ import './App.css'
 
 import {Link} from 'react-router-dom'
 
-import Datas from './components/Datas'
-import PeriodoDias from './components/PeriodoDias'
-import Passagens from './components/Passagens'
-import Hospedagens from './components/Hospedagens'
-import CustosGerais from './components/CustosGerais'
-import Alimentacao from './components/Alimentacao'
-import Seguros from './components/Seguros'
-import Orcamento from './components/Orcamento'
-import TodoList from './components/TodoList'
-
-import CardLink from './components/structure/CardLink'
+import Datas from './Pages/Datas'
+import PeriodoDias from './Pages/PeriodoDias'
+import Passagens from './Pages/Passagens'
+import Hospedagens from './Pages/Hospedagens'
+import CustosGerais from './Pages/CustosGerais'
+import Alimentacao from './Pages/Alimentacao'
+import Seguros from './Pages/Seguros'
+import Orcamento from './Pages/Orcamento'
+import TodoList from './Pages/TodoList'
+import TrajetoDelineado from './Pages/TrajetoDelineado'
 
 import { PageTitle } from './components/PageTitle'
 
@@ -27,13 +26,19 @@ function App() {
       <PageTitle />
       <div className="page-container">
         <Routes>
-          <Route path="/" element={<Datas />} />
+          <Route path="/datas" element={<Datas />} />
+          <Route path="/datas" element={<PeriodoDias />} />
+          <Route path="/datas" element={<Passagens />} />
+          <Route path="/datas" element={<Hospedagens />} />
+          <Route path="/datas" element={<CustosGerais />} />
+          <Route path="/datas" element={<Alimentacao />} />
+          <Route path="/datas" element={<Seguros />} />
+          <Route path="/datas" element={<Orcamento />} />
+          <Route path="/datas" element={<TodoList />} />
+          <Route path="/datas" element={<TrajetoDelineado />} />
         </Routes>
 
-        {/* <Link to="/datas" component={CardLink} /> */}
-        {/* <CardLink title={"DatasCardLink"} url={"/datas"} /> */}
-
-        
+        {/* <Datas />
         <PeriodoDias />
         <Passagens />
         <Hospedagens />
@@ -42,6 +47,7 @@ function App() {
         <Seguros />
         <Orcamento />
         <TodoList />
+        <TrajetoDelineado /> */}
       </div>
     </>
   )
