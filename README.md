@@ -9,3 +9,8 @@
   - using libraries and styles
   - re-organizing the layout
 - refactor code
+
+
+## docs
+- styled-components
+  - https://styled-components.com/docs/basics
