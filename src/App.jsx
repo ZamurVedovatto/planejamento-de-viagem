@@ -3,8 +3,7 @@ import {Routes,Route} from 'react-router-dom'
 
 import './App.css'
 
-import {Link} from 'react-router-dom'
-
+import Dashboard from './Pages/Dashboard'
 import Datas from './Pages/Datas'
 import PeriodoDias from './Pages/PeriodoDias'
 import Passagens from './Pages/Passagens'
@@ -17,6 +16,7 @@ import TodoList from './Pages/TodoList'
 import TrajetoDelineado from './Pages/TrajetoDelineado'
 
 import { PageTitle } from './components/PageTitle'
+import { NavLink } from './components/NavLink'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,31 +24,37 @@ function App() {
   return (
     <>
       <PageTitle />
+      
       <div className="page-container">
-        <Routes>
-          <Route path="/datas" element={<Datas />} />
-          <Route path="/datas" element={<PeriodoDias />} />
-          <Route path="/datas" element={<Passagens />} />
-          <Route path="/datas" element={<Hospedagens />} />
-          <Route path="/datas" element={<CustosGerais />} />
-          <Route path="/datas" element={<Alimentacao />} />
-          <Route path="/datas" element={<Seguros />} />
-          <Route path="/datas" element={<Orcamento />} />
-          <Route path="/datas" element={<TodoList />} />
-          <Route path="/datas" element={<TrajetoDelineado />} />
-        </Routes>
+        <nav className="cards-nav">
+          <NavLink url={"/"} title={"Home"} />
+          <NavLink url={"/datas"} title={"Datas"} />
+          <NavLink url={"/periodo-dias"} title={"PeriodoDias"} />
 
-        {/* <Datas />
-        <PeriodoDias />
-        <Passagens />
-        <Hospedagens />
-        <CustosGerais />
-        <Alimentacao />
-        <Seguros />
-        <Orcamento />
-        <TodoList />
-        <TrajetoDelineado /> */}
+          <NavLink url={"/passagens"} title={"Passagens"} />
+          <NavLink url={"/hospedagens"} title={"Hospedagens"} />
+          <NavLink url={"/custos-gerai"} title={"Custos Gerais"} />
+          <NavLink url={"/alimentacao"} title={"Alimentação"} />
+          <NavLink url={"/seguros"} title={"Seguros"} />
+          <NavLink url={"/orcamento"} title={"Orçamento"} />
+          <NavLink url={"/todo-list"} title={"Todo List"} />
+          <NavLink url={"/trajeto-delineado"} title={"Trajeto Delineado"} />
+        </nav>
       </div>
+
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/datas" element={<Datas />} />
+        <Route path="/periodo-dias" element={<PeriodoDias />} />
+        <Route path="/passagens" element={<Passagens />} />
+        <Route path="/hospedagens" element={<Hospedagens />} />
+        <Route path="/custos-gerais" element={<CustosGerais />} />
+        <Route path="/alimentacao" element={<Alimentacao />} />
+        <Route path="/seguros" element={<Seguros />} />
+        <Route path="/orcamento" element={<Orcamento />} />
+        <Route path="/todo-list" element={<TodoList />} />
+        <Route path="/trajeto-delineado" element={<TrajetoDelineado />} />
+      </Routes>
     </>
   )
 }
