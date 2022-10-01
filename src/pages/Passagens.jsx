@@ -10,6 +10,11 @@ const Passagens = () => {
         <li>passagens a serem compradas e já compradas</li>
         <li>valor e parcelamento das passagens (não compradas e compradas) - esta info vai para o orçamento geral</li>
       </ul>
+
+      <div className="passagens-wrapper">
+        <span>Passagem Aérea Ida (Brasil > Itália)</span>
+        <span>Passagem Aérea Volta (Itália > Brasil)</span>
+      </div>
     </CardWrapper>
   )
 }
